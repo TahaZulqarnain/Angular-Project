@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.notification-icon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    position: relative;
+}
+
+.notification-icon .dot {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: 500;
+    margin-right: 5px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer !important;
+}
+ul.dropdown-menu.show {
+    width: 100%;
+    margin-top: 6px !important;
+}
+a.dropdown-item {
+    cursor: pointer;
+}

@@ -1,0 +1,169 @@
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table {
+    margin: 0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.badge {
+    color: #175CD3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 16px;
+    border: 1px solid #B2DDFF;
+    background: #EFF8FF;
+    margin-left: 24px;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+app-product-card {
+    display: contents;
+}
+
+.table th {
+    padding: 12px 24px;
+    vertical-align: middle;
+    border-bottom: 1px solid #EAECF0;
+    background: #F9FAFB;
+    color: #62708C;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.table-hover>tbody>tr {
+    padding: 16px 24px;
+    line-height: 104px;
+}
+
+.product-heading {
+    color: #292F3B;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0;
+}
+
+.prd-list-header {
+    padding: 20px 24px;
+}
+
+::ng-deep .ngx-pagination {
+    margin-bottom: 0 !important;
+}
+
+::ng-deep .ngx-pagination li {
+    display: inline-block !important;
+    color: #62708C !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    padding: 12px !important;
+}
+
+::ng-deep .ngx-pagination .current {
+    cursor: default !important;
+    border-radius: 8px !important;
+    background: #F4711E !important;
+    color: #FFF !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    width: 40px !important;
+    padding: 12px !important;
+}
+
+::ng-deep .ngx-pagination {
+    background: #FAFAFA !important;
+    padding: 48px 0 !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+::ng-deep .ngx-pagination .small-screen {
+    display: none !important;
+}
+
+::ng-deep .ngx-pagination a:hover,
+::ng-deep .ngx-pagination button:hover {
+    background: transparent !important;
+}
+
+::ng-deep .btn:first-child:active {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.search-product {
+    border-radius: 8px;
+    border: 1px solid #CED3DB;
+    background: #FFF;
+    padding: 11px 14px 10px 38px;
+}
+
+.search-md {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 92%;
+    z-index: 9;
+    top: 14px;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+::ng-deep .table th:nth-child(1),::ng-deep table td:nth-child(1) {
+    width: 295px !important;
+}
+
+::ng-deep .table th:nth-child(2),::ng-deep .table td:nth-child(2) {
+    width: 243px !important;
+}
+
+::ng-deep .table th:nth-child(3),::ng-deep .table td:nth-child(3) {
+    width: 216px !important;
+}
+
+::ng-deep .table th:nth-child(4),::ng-deep .table td:nth-child(4) {
+    width: 93px !important;
+}
+
+::ng-deep .table th:nth-child(5),::ng-deep .table td:nth-child(5) {
+    width: 120px !important;
+}
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+    ::ng-deep .table th:nth-child(5),::ng-deep .table td:nth-child(5) {
+        width: 135px !important;
+    }
+    ::ng-deep .search-md {
+        right: 90% !important;
+    }
+}

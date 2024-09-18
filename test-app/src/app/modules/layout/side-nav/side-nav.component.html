@@ -1,0 +1,41 @@
+<div [class.collapsed-sidenav]="isCollapsed" class="sidenav">
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img class="main-logo" src="../../../../assets/images/global/brand-logo.png" alt="Eazio Logo">
+            <img class="toggle-logo" src="../../../../assets/images/global/logo-icon.png" alt="Eazio Logo">
+        </div>
+
+        <!-- Toggle Button -->
+        <button (click)="toggleSidenav();" class="toggle-btn border-0">
+            <img class="toggle-icon" src="../../../../assets/images/login/chevron-left.png">
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="nav flex-column">
+            <a href="/dashboard" class="nav-link active">
+                <img src="../../../../assets/images/global/bar-chart-square.png"><span class="nav-text">Dashboard</span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/users.png"><span class="nav-text">People </span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/calendar.png"><span class="nav-text">Schedule </span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/heart-rounded.png"> <span class="nav-text">Time off </span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/clock-check.png"> <span class="nav-text">Attendance</span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/dollar.png"> <span class="nav-text">Payroll</span>
+            </a>
+            <a href="/dashboard" class="nav-link">
+                <img src="../../../../assets/images/global/dollar.png"><span class="nav-text"> Document</span>
+            </a>
+        </nav>
+    </div>
+</div>
+<!-- Sidebar End -->

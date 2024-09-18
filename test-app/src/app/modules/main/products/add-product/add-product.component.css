@@ -1,0 +1,59 @@
+.p-24 {
+    padding: 24px;
+    background: #FAFAFA;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-control,
+.form-select {
+    border-radius: 12px !important;
+    border: 1px solid #E4E4E7 !important;
+    padding: 16px !important;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid #F2F2F7;
+    background: #FFF;
+    padding: 32px 24px;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-title {
+    color: #27272A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.eaz-btn {
+    padding: 16px;
+    background: #F4711E;
+    border: none;
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+}
+
+.eaz-btn:hover {
+    background-color: #f48022;
+}

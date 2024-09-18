@@ -1,0 +1,62 @@
+.d-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    transition: grid-template-columns 0.2s ease-in-out;
+}
+
+.g-grid {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    transition: grid-template-columns 0.3s ease-in-out;
+}
+
+
+.main-grid-item {
+    min-height: 885px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-nav {
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0px;
+}
+
+.side-nav.closed {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.content {
+    padding: 0px;
+}
+
+::ng-deep .dark-mode .side-nav {
+    background: #fff !important;
+}
+
+/* Additional styles to handle the dynamic column layout */
+.d-grid.closed {
+    grid-template-columns: 0px 1fr;
+}
+
+::ng-deep .cc-header-main .cc-header-bottom,
+::ng-deep .cc-admin-panel .cc-header-bottom {
+    position: relative !important;
+    bottom: 40px;
+    padding: 0px 15px;
+    margin-top: 23rem;
+    text-align: left !important;
+}
+
+::ng-deep .cc-header-main ul.cc-nav-links,
+::ng-deep .cc-admin-panel ul.cc-nav-links {
+    margin: 0 !important;
+}
+
+.toggleBtn {
+    cursor: pointer;
+    text-align: right;
+    margin-right: 9px;
+}

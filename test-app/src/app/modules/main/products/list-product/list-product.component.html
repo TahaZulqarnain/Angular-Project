@@ -1,0 +1,32 @@
+<app-no-result-found *ngIf="products.length==0"></app-no-result-found>
+<div class="container-fluid p-0" *ngIf="products.length>0">
+    <div class="d-flex justify-content-between align-items-center prd-list-header">
+        <h4 class="product-heading">All Products <span class="badge">{{ totalProducts }} Products</span></h4>
+        <div class="input-group w-25">
+            <img class="search-md" src="../../../../../assets//images/porductlist/search-md.png">
+            <input type="text" class="form-control search-product" [(ngModel)]="searchTerm"
+                (keyup)="getAllProducts(searchTerm)" placeholder="Search Product" aria-label="Search Product">
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Stock Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products | paginate: { itemsPerPage: 6, currentPage: page }">
+
+                    <app-product-card [product]="product" (editProduct)="editProduct($event)"
+                        (deleteProduct)="deleteProduct($event)"></app-product-card>
+            </tbody>
+        </table>
+    </div>
+
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>

@@ -1,0 +1,125 @@
+<div class="container-fluid p-0 bg-image">
+    <div class="row">
+        <header class="header-main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid p-head">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../../../../../assets/images/login/logo-white.png" alt="Logo" height="30">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="../../../../../assets/images/login/world.png">
+                                    English <img src="../../../../../assets/images/login/arrow.png"></a>
+                            </li>
+                            <img class="sep" src="../../../../../assets/images/login/divider.png">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Create An Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-md-12 d-flex align-items-center">
+            <div class="login-container">
+                <div class="form-container">
+                    <img src="../../../../../assets/images/login/logo-black.png">
+                    <div class="login-header">
+                        <h3 class="login-heading">Log In To Your Account</h3>
+                        <p class="login-subtext">So, do you come here often?.. Let's get started.</p>
+                    </div>
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="false" class="form-group">
+                        <!-- username Input -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Email</label>
+                            <span class="field-icon"><img src="../../../../../assets/images/login/mail.png"></span>
+                            <input type="username" class="form-control" id="username" formControlName="username"
+                                placeholder="John@gmail.com" required>
+                            <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched"
+                                class="text-danger">
+                                username is required.
+                            </div>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="mb-3 position-relative">
+                            <label for="password" class="form-label">Password</label>
+                            <span class="field-icon"><img src="../../../../../assets/images/login/lock.png"></span>
+                            <div class="input-group">
+                                <input [type]="isPasswordVisible ? 'text' : 'password'" class="form-control pwd"
+                                    id="password" formControlName="password" autocomplete="false" placeholder="********"
+                                    required />
+                                <span class="input-group-text" (click)="togglePasswordVisibility()">
+                                    <i [ngClass]="isPasswordVisible ? 'bi bi-eye-slash' : 'bi bi-eye'"
+                                        id="togglePassword"></i>
+                                </span>
+                            </div>
+                            <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                                class="text-danger">
+                                Password is required.
+                            </div>
+                            <div class="form-link">
+                                <a href="#">Oops, Forgot Password?</a>
+                                <!-- Remember Me -->
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe"
+                                        formControlName="rememberMe" />
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">Let's Go To
+                            Eazio</button>
+
+                        <!-- Sign Up Link -->
+                        <div class="login-footer">
+                            <p>Don’t have an account? <a href="#">Sign up</a></p>
+                        </div>
+
+                        <!-- Display API Error Message -->
+                        <div *ngIf="apiError" class="text-danger mt-3 text-center">
+                            {{ apiError }}
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <footer class="footer-main">
+            <div class="col-md-7 col-xs-12">
+                <p class="copyright"><img src="../../../../../assets/images/login/copyright.png">Copyright 2023 Eazio FZ
+                    LLC. All Rights Reserved</p>
+            </div>
+            <div class="col-md-3 col-xs-12 fl-r">
+                <p class="copyright"><img src="../../../../../assets/images/login/lock-dark.png">Privacy Policy</p>
+                <p class="copyright"><img src="../../../../../assets/images/login/help.png">Need help?</p>
+            </div>
+        </footer>
+    </div>
+</div>

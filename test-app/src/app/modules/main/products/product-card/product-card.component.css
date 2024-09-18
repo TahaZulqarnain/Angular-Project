@@ -1,0 +1,20 @@
+.tbl-data {
+    color: #62708C;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    padding: 16px 24px;
+}
+
+.tbl-price {
+    color: #62708C;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 16px 24px;
+}

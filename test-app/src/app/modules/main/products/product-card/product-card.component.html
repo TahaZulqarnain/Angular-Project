@@ -1,0 +1,12 @@
+<td class="tbl-data">{{ product.title }}</td>
+<td class="tbl-data">{{ product.category }}</td>
+<td class="tbl-data">{{ product.stock }}</td>
+<td class="tbl-price">{{ product.price | currency:'Rs.' }}</td>
+<td>
+    <button class="btn btn-sm" (click)="onEdit()">
+        <img src="../../../../../assets/images/porductlist/edit.png">
+    </button>
+    <button class="btn btn-sm" (click)="onDelete()">
+        <img src="../../../../../assets/images/porductlist/delete.png">
+    </button>
+</td>

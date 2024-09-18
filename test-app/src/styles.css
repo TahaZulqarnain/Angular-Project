@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@fontsource/inter';
+body {
+    font-family: 'Inter', sans-serif;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+@media screen and (max-width: 767px) {
+body{
+    overflow-x:hidden;
+}
+}

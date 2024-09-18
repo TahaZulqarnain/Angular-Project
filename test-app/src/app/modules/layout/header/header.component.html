@@ -1,0 +1,21 @@
+<!-- Header -->
+<div class="header">
+    <i class="bi bi-bell notification-icon">
+        <span class="dot"></span>
+    </i>
+
+    <div class="dropdown user-info">
+        <img [src]="image" alt="User Avatar" class="user-avatar">
+        <div>
+            <span class="user-name">{{ firstName }} {{ lastName }}</span><br>
+            <small class="text-muted">{{ email }}</small>
+        </div>
+        <button class="btn btn-link" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="../../../../assets/images/global/icon.png">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" (click)="logOut();">Logout</a></li>
+        </ul>
+    </div>
+</div>
